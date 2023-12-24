@@ -97,7 +97,7 @@ if (isset($_POST['btnLog']))
         //$sAconn = $_POST['sAconn'];
         //$password = $_POST['password'];
         //exec('nmcli dev wifi rescan');
-        $command = "tail -f /var/log/svxlink.log";
+        $command = "tail -l /var/log/svxlink.log";
         exec($command,$screen,$retval);
 }
 

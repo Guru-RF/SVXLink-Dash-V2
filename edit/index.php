@@ -181,15 +181,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $data .= $line . "\n";
     }
     
-    $success = file_put_contents($file, $data);
-    echo $file . "  " . $data;
-    if ($success === false) {
-        echo 'Error saving changes to file.';
-    } else {
-        chown ($file,'www-data');
-        exec('sudo systemctl restart svxlink');
-        echo 'Changes saved and service restarted.';
-    }   
+   // $success = file_put_contents($file, $data);
+   // echo $file . "  " . $data;
+   // if ($success === false) {
+   //     echo 'Error saving changes to file.';
+   // } else {
+   //     chown ($file,'www-data');
+   //     exec('sudo systemctl restart svxlink');
+   //     echo 'Changes saved and service restarted.';
+   // }   
         //exec('sudo chown -R www-data:root /etc/svxlink/');
 }
 //echo "<meta http-equiv='refresh' content='0'>";

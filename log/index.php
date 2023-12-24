@@ -66,8 +66,6 @@ textarea {
 
 <?php 
 
-
-
 //if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //  if (empty($_POST["ssid"])) {
 //     echo "Name is required";
@@ -75,7 +73,6 @@ textarea {
 //    $ssid = $_POST["ssid"]);
 //  }
 //}}
-
 
 // load the connlist
 $retval = null;
@@ -90,14 +87,7 @@ $screen[1] = "";
 $screen[2] = "CLick on the button to get current running log.";
 $screen[3] = "";
 
-
-
-
 //tbc - load the data from ini RF.
-
-
-
-
 
 if (isset($_POST['btnLog']))
     {

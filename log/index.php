@@ -63,7 +63,8 @@ textarea {
 <center>
 <h1 id="web-audio-peak-meters" style="color:#00aee8;font: 18pt arial, sans-serif;font-weight:bold; text-shadow: 0.25px 0.25px gray;">Log viewer</h1>
 
-
+<?php
+?>
 <?php 
 
 //if ($_SERVER["REQUEST_METHOD"] == "POST") {

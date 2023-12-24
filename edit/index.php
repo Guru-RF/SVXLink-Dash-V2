@@ -167,7 +167,7 @@ exec('sudo cp ' . $file . ' ' .$file .'.bak');
 $lines = file($file);
 echo '<form method="post" enctype="multipart/form-data" action="' . htmlspecialchars($_SERVER['PHP_SELF']) . '">';
 echo '<table width=60%>';
-
+  
 foreach ($lines as $line_num => $line) {
     echo '<tr><td contenteditable="true" style="text-align:left"><input type="text" style="width:100%" name="line[]" value="' . htmlspecialchars($line) . '"></td></tr>';
 }
@@ -191,12 +191,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    //     echo 'Changes saved and service restarted.';
    // }   
         //exec('sudo chown -R www-data:root /etc/svxlink/');
+echo "first ". $data . " second " . $line ;
 }
 //echo "<meta http-equiv='refresh' content='0'>";
+
 exit();
 //Header('Location: ' . htmlspecialchars($_SERVER['PHP_SELF']));
 //exit(); 
-echo "first ". $data . " second " . $line ;
+
 ?>
 </fieldset>
 </body>

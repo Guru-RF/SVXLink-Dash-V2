@@ -196,6 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 exit();
 //Header('Location: ' . htmlspecialchars($_SERVER['PHP_SELF']));
 //exit(); 
+echo "first ". $data . " second " . $line ;
 ?>
 </fieldset>
 </body>

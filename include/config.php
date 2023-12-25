@@ -19,31 +19,27 @@ define("FMNET","");
 define("TG_URI","NULL");
 define("NODE_INFO_FILE","");
 define("RF_MODULE","");
-
-
-
-
-        define("KEY1", array(' D1 ','*D1#','green'));
-        define("KEY2", array(' D2 ','*D2#','orange'));
-        define("KEY3", array(' D3 ','*D3#','orange'));
-        define("KEY4", array(' D4 ','*D4#','orange'));
-        define("KEY5", array(' D5', '*D5#','purple'));
-        define("KEY6", array(' D6 ','*D6#','purple'));
-        define("KEY7", array(' D7 ','*D7#','purple'));
-        define("KEY8", array(' D8 ','*D8#','blue'));
-        define("KEY9", array(' D9 ','*D9#','blue'));
-        define("KEY10", array(' D10 ','*D10#','red'));
-        // additional DTMF keys
-        define("KEY11", array(' D11 ','*D11#','green'));
-        define("KEY12", array(' D12 ','*D12#','orange'));
-        define("KEY13", array(' D13 ','*D13#','orange'));
-        define("KEY14", array(' D14 ','*D14#','orange'));
-        define("KEY15", array(' D15 ','*D15#','purple'));
-        define("KEY16", array(' D16 ','*D16#','purple'));
-        define("KEY17", array(' D17 ','*D17#','orange'));
-        define("KEY18", array(' D18 ','*D18#','blue'));
-        define("KEY19", array(' D19 ','*D19#','blue'));
-        define("KEY20", array(' D20 ','*D20#','red'));
+define("KEY1", array(' D1 ','*D1#','green'));
+define("KEY2", array(' D2 ','*D2#','orange'));
+define("KEY3", array(' D3 ','*D3#','orange'));
+define("KEY4", array(' D4 ','*D4#','orange'));
+define("KEY5", array(' D5', '*D5#','purple'));
+define("KEY6", array(' D6 ','*D6#','purple'));
+define("KEY7", array(' D7 ','*D7#','purple'));
+define("KEY8", array(' D8 ','*D8#','blue'));
+define("KEY9", array(' D9 ','*D9#','blue'));
+define("KEY10", array(' D10 ','*D10#','red'));
+// additional DTMF keys
+define("KEY11", array(' D11 ','*D11#','green'));
+define("KEY12", array(' D12 ','*D12#','orange'));
+define("KEY13", array(' D13 ','*D13#','orange'));
+define("KEY14", array(' D14 ','*D14#','orange'));
+define("KEY15", array(' D15 ','*D15#','purple'));
+define("KEY16", array(' D16 ','*D16#','purple'));
+define("KEY17", array(' D17 ','*D17#','orange'));
+define("KEY18", array(' D18 ','*D18#','blue'));
+define("KEY19", array(' D19 ','*D19#','blue'));
+define("KEY20", array(' D20 ','*D20#','red'));
         
 
 
@@ -51,7 +47,7 @@ define("RF_MODULE","");
         define("SVXCONFPATH", "/etc/svxlink/");
         define("SVXCONFIG", "svxlink.conf");
         define("SVXLOGPATH", "/var/log/");
-        define("SVXLOGPREFIX","svxlink.log");
+        define("SVXLOGPREFIX","svxlink");
         }
         include_once 'parse_svxconf.php';
         
@@ -62,10 +58,10 @@ define("FMNETWORK", $fmnetwork);
 // Select only one URL for SVXReflector API to get connected Nodes
 //
 // FM SVXLink-UK
-define("URLSVXRAPI", $refApi);
+//define("URLSVXRAPI", $refApi);
 //
 // Empty address API do not show connected nodes to svxreflector 
-//define("URLSVXRAPI", "");
+define("URLSVXRAPI", "");
 //
 // Put url address to your svxreflector which offer information of status
 //define("URLSVXRAPI", "http://192.168.1.33:9999/status");
@@ -81,7 +77,7 @@ define("SVXCONFIG", "svxlink.conf");
 //
 // Path and file name of log
 define("SVXLOGPATH", "/var/log/");
-define("SVXLOGPREFIX", "svxlink.log");
+define("SVXLOGPREFIX", "svxlink");
 //
 //
 // Define where is located menu wit buttons TOP or BOTTOM

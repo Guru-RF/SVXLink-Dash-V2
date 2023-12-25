@@ -23,9 +23,9 @@ else { $callsign="NOCALL";
     <meta name="language" content="English" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="generator" content="SVXLink" />
-    <meta name="Author" content="G4NAB, SP2ONG, SP0DZ" />
-    <meta name="Description" content="Dashboard for SVXLink by G4NAB, SP2ONG, SP0DZ" />
-    <meta name="KeyWords" content="SVXLink,G4NAB, SP2ONG, SP0DZ" />
+    <meta name="Author" content="ON3URE, G4NAB, SP2ONG, SP0DZ" />
+    <meta name="Description" content="Dashboard for SVXLink by ON3URE, G4NAB, SP2ONG, SP0DZ" />
+    <meta name="KeyWords" content="SVXLink,ON3URE, G4NAB, SP2ONG, SP0DZ" />
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="expires" content="0" />

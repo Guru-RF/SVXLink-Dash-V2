@@ -142,8 +142,6 @@ if (isset($_POST['btnRestart']))
 	
 	<button name="btnSvxlink" type="submit" class="red" style="height:30px; width:400px; font-size:12px;">Restart SVXlink Service</button>
 	<BR>
-	<button name="btnLcd" type="submit" class="red" style="height:30px; width:400px; font-size:12px;">Restart Lcd Service</button>
-	<BR>
 	<button name="btnRestart" type="submit" class="red" style="height:30px; width:400px; font-size:12px;">Restart Device</button>
         <BR>
 	

@@ -14,16 +14,16 @@ define("ADD_BUTTONS", 1);
 // DTMF keys
 // syntax: 'KEY number,'Description','DTMF code','color button'.
 //
-define("KEY1", array(' D1 ','*D1#','green'));
-define("KEY2", array(' D2 ','*D2#','orange'));
-define("KEY3", array(' D3 ','*D3#','orange'));
-define("KEY4", array(' D4 ','*D4#','orange'));
-define("KEY5", array(' D5', '*D5#','purple'));
-define("KEY6", array(' D6 ','*D6#','purple'));
-define("KEY7", array(' D7 ','*D7#','purple'));
-define("KEY8", array(' D8 ','*D8#','blue'));
-define("KEY9", array(' D9 ','*D9#','blue'));
-define("KEY10", array(' D10 ','*D10#','red'));
+define("KEY1", array(' TG4 ','914#','green'));
+define("KEY2", array(' TG8 ','918#','green'));
+define("KEY3", array(' TG23 ','9123#','green'));
+define("KEY4", array(' TG50 ','9150#','orange'));
+define("KEY5", array(' TG51 ','9151#','orange'));
+define("KEY6", array(' TG52', '9152#','orange'));
+define("KEY7", array(' TG53 ','9153#','orange'));
+define("KEY8", array(' TG54 ','9154#','orange'));
+define("KEY9", array(' TG55 ','9155#','orange'));
+define("KEY10", array(' PARROT ','D1#','red'));
 // additional DTMF keys
 define("KEY11", array(' D11 ','*D11#','green'));
 define("KEY12", array(' D12 ','*D12#','orange'));

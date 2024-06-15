@@ -2,7 +2,7 @@
 	<a style="color: black;">Display</a> |
 	<a href="/index.php" style="color: #0000ff;">Dashboard</a> | 
 	<a href="/tg.php" style="color: #0000ff;">Talk Groups</a> | 
-	<a href="/dtmf.php" style="color: #0000ff;">Dtmf</a> | 
+	<a href="/" onclick="javascript:event.target.port=4200" style="color: #0000ff;">Shell</a> | 
 	<a href="/power.php" style="color: #0000ff;">Power</a></p>
 	
 </p>

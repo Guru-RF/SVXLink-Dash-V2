@@ -1,64 +1,48 @@
 <div class="content">
 <?php
-$ip = $_SERVER['REMOTE_ADDR']; 
-$net1= cidr_match($ip,"192.168.0.0/8");
-$net2= cidr_match($ip,"192.175.43.91/8");
-$net3= cidr_match($ip,"127.0.0.0/8");
-$net4= cidr_match($ip,"192.168.1.0/8");
-$net5 = cidr_match($ip, "192.168.1.254/8");
-
-if ($net1 == TRUE || $net2 == TRUE || $net3 == TRUE || $net4 == TRUE || $net5 == TRUE) {
 
  if(array_key_exists('button1', $_POST)) {
-        $exec= "echo '" . KEY1[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY1[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button2', $_POST)) {
-        $exec= "echo '" . KEY2[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY2[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button3', $_POST)) {
-        $exec= "echo '" . KEY3[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY3[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button4', $_POST)) {
-        $exec= "echo '" . KEY4[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY4[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button5', $_POST)) {
-        $exec= "echo '" . KEY5[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY5[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button6', $_POST)) {
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY6[1]);
         $exec= "echo '" . KEY6[1] . "' > /tmp/dtmf_svx";
             exec($exec,$output);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button7', $_POST)) {
-        $exec= "echo '" . KEY7[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY7[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
 
  if(array_key_exists('button8', $_POST)) {
-        $exec= "echo '" . KEY8[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY8[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
 
  if(array_key_exists('button9', $_POST)) {
-        $exec= "echo '" . KEY9[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY9[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
  if(array_key_exists('button10', $_POST)) {
-        $exec= "echo '" . KEY10[1] . "' > /tmp/dtmf_svx";
-            exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . KEY10[1]);
             echo "<meta http-equiv='refresh' content='0'>";
         }
 /*
@@ -141,8 +125,7 @@ if ($net1 == TRUE || $net2 == TRUE || $net3 == TRUE || $net4 == TRUE || $net5 ==
 </form>
 <?php
   if (isset($_POST["dtmfsvx"])){
-   $exec= "echo '" . $_POST['dtmfsvx'] . "' > /tmp/dtmf_svx";
-   exec($exec,$output);
+	shell_exec('/usr/sbin/hotspot_dtmf ' . $_POST['dtmfsvx']);
    echo "<meta http-equiv='refresh' content='0'>";
     }
   if (isset($_POST["jmpto"])) {
@@ -166,6 +149,3 @@ if (isset($_POST["jmptoM"])) {
 <p style="margin-bottom:-2px;"></p>
 </div>
 </fieldset>
-<?php
-}
-?>

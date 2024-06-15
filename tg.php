@@ -120,6 +120,11 @@ include_once __DIR__."/include/buttons.php";
 ?>
 
 <?php
+if (MENUBUTTON=="BOTTOM") {
+include_once __DIR__."/include/buttons.php"; }
+?>
+
+<?php
     echo '<div class="content2">'."\n";
     echo '<script type="text/javascript">'."\n";
     echo 'function reloadSysInfo(){'."\n";
@@ -132,10 +137,6 @@ include_once __DIR__."/include/buttons.php";
     include 'include/system.php';
     echo '</div>'."\n";
     echo '</div>'."\n";
-?>
-<?php
-if (MENUBUTTON=="BOTTOM") {
-include_once __DIR__."/include/buttons.php"; }
 ?>
 <center><span title="Dashboard" style="font: 7pt arial, sans-serif;">SvxLink Dashboard  ON3URE, G4NAB, SP2ONG, SP0DZ <?php $cdate=date("Y"); if ($cdate > "2021") {$cdate="2021-".date("Y");} echo $cdate; ?>
 </div>
